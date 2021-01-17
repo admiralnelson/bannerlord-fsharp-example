@@ -68,20 +68,17 @@ module MyInputSystem =
 
 
 module WorldMapHandler = 
-    let mutable private  wasPressed = false
 
     let FastForward() =
         match Campaign.Current with
         | null -> ()
-        | _ -> Helper.Print "fast forward"
-               Campaign.Current.SetTimeSpeed 2
+        | _ -> Campaign.Current.SetTimeSpeed 2
 
         
     let Normal() = 
         match Campaign.Current with
         | null -> ()
-        | _ ->  wasPressed <- false
-                Campaign.Current.SetTimeSpeed 1
+        | _ -> Campaign.Current.SetTimeSpeed 1
         
 
 
@@ -93,9 +90,6 @@ type MySubmodule() =
         MyInputSystem.Tick()
 
     override this.OnBeforeInitialModuleScreenSetAsRoot () = 
-        Helper.Print "working"
-        Debug.Print "test"
-        Helper.MessageboxOK "test" "called from F#" (Action(fun() -> Helper.Print("ok was pressed")))
 
         MyInputSystem.RegisterInputChording InputKey.Space InputKey.LeftControl (
             fun () -> 
@@ -103,9 +97,7 @@ type MySubmodule() =
 
         MyInputSystem.RegisterInputChordingRelease InputKey.Space InputKey.LeftControl (
             fun () -> 
-                WorldMapHandler.Normal()
-                Helper.Print "ctrl+space released")
+                WorldMapHandler.Normal())
 
-        MyInputSystem.RegisterInput InputKey.Tab (fun () -> Helper.Print "tab was pressed")
 
     
