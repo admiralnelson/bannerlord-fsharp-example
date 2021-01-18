@@ -1,4 +1,4 @@
-﻿namespace BannerlordTest
+﻿namespace BannerlordControlSpaceSpeed
 
 open System
 open System.Diagnostics
@@ -14,7 +14,7 @@ module Helper =
 
     let MessageboxOK title msg onOK = 
         InformationManager.ShowInquiry(new InquiryData(title, msg, true, false, "Accept", "Decline", onOK, fun() -> ()))
-    let Messagebox(title, msg, onOk, onCancel) =
+    let Messagebox title msg onOk onCancel =
          InformationManager.ShowInquiry(new InquiryData(title, msg, true, true, "Accept", "Decline", onOk, onCancel))
 
     

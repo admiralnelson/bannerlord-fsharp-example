@@ -1,6 +1,6 @@
   <Module>
-  <Name value="Bannerlord F#" />
-  <Id value="BannerlordTest" />
+  <Name value="Bannerlord Control+Space Fast Forward" />
+  <Id value="BannerlordControlSpaceSpeed" />
   <Version value="v1.0.0" />
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
@@ -8,9 +8,9 @@
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="BannerlordTest" />
-      <DLLName value="BannerlordTest.dll" />
-      <SubModuleClassType value="BannerlordTest.MySubmodule" />
+      <Name value="BannerlordControlSpaceSpeed" />
+      <DLLName value="BannerlordControlSpaceSpeed.dll" />
+      <SubModuleClassType value="BannerlordControlSpaceSpeed.MySubmodule" />
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />

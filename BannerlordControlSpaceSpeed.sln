@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BannerlordTest", "BannerlordTest\BannerlordTest.fsproj", "{9E6F804D-C0B8-4902-8DBD-9E39F26D4A07}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BannerlordControlSpaceSpeed", "BannerlordTest\BannerlordControlSpaceSpeed.fsproj", "{9E6F804D-C0B8-4902-8DBD-9E39F26D4A07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

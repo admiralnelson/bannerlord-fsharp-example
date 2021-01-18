@@ -8,12 +8,12 @@
     <ProjectGuid>9e6f804d-c0b8-4902-8dbd-9e39f26d4a07</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>BannerlordTest</RootNamespace>
-    <AssemblyName>BannerlordTest</AssemblyName>
+    <AssemblyName>BannerlordControlSpaceSpeed</AssemblyName>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <WarningsAsErrors>3239;$(WarningsAsErrors)</WarningsAsErrors>
-    <Name>BannerlordTest</Name>
+    <Name>BannerlordControlSpaceSpeed</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
